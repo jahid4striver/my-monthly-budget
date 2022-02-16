@@ -22,18 +22,19 @@
                 </div>
                 <div class="col-lg-5 text-center calculation">
                     <h3>Income</h3>
-                    <p>Income: <input type="text"> </p>
+                    <p>Income: <input id="income" type="number" value=""> </p>
                     <h3>Expenses</h3>
-                    <p>Food: <input type="text"> </p>
-                    <p>Rent: <input type="text"> </p>
-                    <p>Clothes: <input type="text"> </p>
-                    <button class="btn button" type="submit">Calculate</button>
-                    <h3>Total Expenses: </h3>
-                    <h3>Balance:</h3>
-                    <p>Save: </p><input type="text"><span>%</span>
-                    <button class="btn button" type="submit">Save</button>
-                    <h3>Saving Amount: <span></span></h3>
-                    <h3>Remaining Amount: <span></span></h3>
+                    <p>Food: <input id="food" type="number" value=""> </p>
+                    <p>Rent: <input id="rent" type="number" value=""> </p>
+                    <p>Clothes: <input id="cloth" type="number" value=""> </p>
+                    <button id="calculate-btn" class="btn button" type="submit">Calculate</button>
+                    <h3>Total Expenses: <span id="total-expenses"></span> Taka </h3>
+                    <h3>Balance: <span id="balance-after-expense"></span> Taka </h3>
+                    <p>Save: <input id="save" type="number" value=""><span>%</span>
+                        <button id="save-btn" class="btn button" type="submit">Save</button>
+                    </p>
+                    <h3>Saving Amount: <span id="saving-amount"></span> Taka</h3>
+                    <h3>Remaining Amount: <span id="remain-amount"></span> Taka</h3>
 
 
 
