@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Accounts</title>
+    <title>Monthly Budget</title>
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Local Css -->
@@ -15,29 +15,35 @@
 <body>
     <main class="container">
         <section>
-            <h1 class="text-center">My Accounts</h1>
-            <div class="row">
-                <div class="col-lg-7">
-                    <img class="img-fluid w-100" src="images/taka.png" alt="">
+            <!-- Section Header -->
+            <h1 class="text-center my-5">Monthly Budget</h1>
+            <div class="row g-5">
+                <!-- Left Image -->
+                <div class="col-lg-6 col-12">
+                    <img class="img-fluid w-100" src="images/taka2.png" alt="">
                 </div>
-                <div class="col-lg-5 text-center calculation">
-                    <h3>Income</h3>
+                <!-- Calculations -->
+                <div class="col-lg-5 col-12 text-center calculation ps-5 pe-2 py-4 ms-5">
+                    <h5>Income</h5>
                     <p>Income: <input id="income" type="number" value=""> </p>
-                    <h3>Expenses</h3>
+                    <h5>Expenses</h5>
                     <p>Food: <input id="food" type="number" value=""> </p>
                     <p>Rent: <input id="rent" type="number" value=""> </p>
                     <p>Clothes: <input id="cloth" type="number" value=""> </p>
-                    <button id="calculate-btn" class="btn button" type="submit">Calculate</button>
-                    <h3>Total Expenses: <span id="total-expenses"></span> Taka </h3>
-                    <h3>Balance: <span id="balance-after-expense"></span> Taka </h3>
+                    <!-- Some Errors -->
+                    <p id="negetive" class="negetive">Sorry You can't give a negetive value</p>
+                    <p id="blank-error" class="blank-error">Please fill all the input value</p>
+                    <p id="extra-expense" class="extra-expense">Sorry You Can't Spend More than Your Income</p>
+                    <button id="calculate-btn" class="btn button mb-3" type="submit">Calculate</button>
+                    <h5>Total Expenses: <span id="total-expenses"></span> Taka </h5>
+                    <h5>Balance: <span id="balance-after-expense"></span> Taka </h5>
                     <p>Save: <input id="save" type="number" value=""><span>%</span>
                         <button id="save-btn" class="btn button" type="submit">Save</button>
                     </p>
-                    <h3>Saving Amount: <span id="saving-amount"></span> Taka</h3>
-                    <h3>Remaining Amount: <span id="remain-amount"></span> Taka</h3>
-
-
-
+                    <!-- Another Error -->
+                    <p id="saving-error" class="saving-error">Sorry You have not Enough Money To Save </p>
+                    <h5>Saving Amount: <span id="saving-amount"></span> Taka</h5>
+                    <h5>Remaining Amount: <span id="remain-amount"></span> Taka</h5>
                 </div>
             </div>
         </section>

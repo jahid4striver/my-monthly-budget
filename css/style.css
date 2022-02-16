@@ -4,13 +4,12 @@ h1{
 }
 .button{
     background-color: #59A5FF;
-    padding: 10px 40px;
+    padding: px 45px;
     color: #fff;
     ;
 }
 
 input{
-    /* background-color: lightgray; */
     outline: none;
     margin: 5px 10px;
     padding: 5px;
@@ -22,6 +21,11 @@ input{
 .calculation{
     background-color:#F8F8F8;
     border-radius: 10px;
-    /* margin-left: 20px; */
-    ;
+    
+}
+
+.negetive, .blank-error, .extra-expense, .saving-error{
+    color: red;
+    font-weight: bold;
+    display: none;
 }
