@@ -6,10 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Accounts</title>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Local Css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <main class="container">
+        <section>
+            <h1 class="text-center">My Accounts</h1>
+            <div class="row">
+                <div class="col-lg-7">
+                    <img class="img-fluid w-100" src="images/taka.png" alt="">
+                </div>
+                <div class="col-lg-5 text-center calculation">
+                    <h3>Income</h3>
+                    <p>Income: <input type="text"> </p>
+                    <h3>Expenses</h3>
+                    <p>Food: <input type="text"> </p>
+                    <p>Rent: <input type="text"> </p>
+                    <p>Clothes: <input type="text"> </p>
+                    <button class="btn button" type="submit">Calculate</button>
+                    <h3>Total Expenses: </h3>
+                    <h3>Balance:</h3>
+                    <p>Save: </p><input type="text"><span>%</span>
+                    <button class="btn button" type="submit">Save</button>
+                    <h3>Saving Amount: <span></span></h3>
+                    <h3>Remaining Amount: <span></span></h3>
 
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Script Files -->
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
