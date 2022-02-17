@@ -19,11 +19,11 @@
             <h1 class="text-center my-5">Monthly Budget</h1>
             <div class="row g-5">
                 <!-- Left Image -->
-                <div class="col-lg-6 col-12">
-                    <img class="img-fluid w-100" src="images/taka2.png" alt="">
+                <div class="col-lg-6 col-12 mx-auto image">
+                    <img class="w-100" src="images/taka.png" alt="">
                 </div>
                 <!-- Calculations -->
-                <div class="col-lg-5 col-12 text-center calculation ps-5 pe-2 py-4 ms-5">
+                <div class="col-lg-5 col-12 text-center calculation ps-5 pe-2 py-4 mx-auto">
                     <h5>Income</h5>
                     <p>Income: <input id="income" type="number" value=""> </p>
                     <h5>Expenses</h5>
@@ -35,15 +35,15 @@
                     <p id="blank-error" class="blank-error">Please fill all the input value</p>
                     <p id="extra-expense" class="extra-expense">Sorry You Can't Spend More than Your Income</p>
                     <button id="calculate-btn" class="btn button mb-3" type="submit">Calculate</button>
-                    <h5>Total Expenses: <span id="total-expenses"></span> Taka </h5>
-                    <h5>Balance: <span id="balance-after-expense"></span> Taka </h5>
+                    <h5>Total Expenses: <span id="total-expenses"></span></h5>
+                    <h5>Balance: <span id="balance-after-expense"></span></h5>
                     <p>Save: <input id="save" type="number" value=""><span>%</span>
                         <button id="save-btn" class="btn button" type="submit">Save</button>
                     </p>
                     <!-- Another Error -->
                     <p id="saving-error" class="saving-error">Sorry You have not Enough Money To Save </p>
-                    <h5>Saving Amount: <span id="saving-amount"></span> Taka</h5>
-                    <h5>Remaining Amount: <span id="remain-amount"></span> Taka</h5>
+                    <h5>Saving Amount: <span id="saving-amount"></span></h5>
+                    <h5>Remaining Amount: <span id="remain-amount"></span></h5>
                 </div>
             </div>
         </section>
