@@ -24,68 +24,26 @@
                 </div>
                 <!-- Calculations -->
                 <div class="col-lg-5 col-12 text-center calculation ps-5 pe-2 py-4 mx-auto">
-                    <!-- Income Section -->
-                    <h4>Income</h4>
-                    <div class="row mb-3">
-                        <div class="col-lg-2">
-                            <p class="p-2">Income: </p>
-                        </div>
-                        <div class="col-lg-10 text-start">
-                            <input id="income" type="number" value="">
-                        </div>
-                    </div>
-                    <!-- Income Section End -->
-
-                    <!-- Expenses Section Start -->
-                    <h4 class="text-center">Expenses</h4>
-                    <div class="row mb-3">
-                        <div class="col-lg-2 text-end">
-                            <p class="p-2">Food: </p>
-                            <p class="p-0">Rent: </p>
-                            <p class="p-1">Clothes: </p>
-
-                        </div>
-                        <div class="col-lg-10 text-start">
-                            <input id="food" type="number" value="">
-                            <input id="rent" type="number" value="">
-                            <input id="cloth" type="number" value="">
-                            <br>
-                        </div>
-                    </div>
-                    <div class="center mb-3">
-                        <p id="negetive" class="negetive">Sorry You can't give a negetive value</p>
-                        <p id="blank-error" class="blank-error">Please fill all the input value</p>
-                        <p id="extra-expense" class="extra-expense">Sorry You Can't Spend More than Your Income
-                        </p>
-                    </div>
-                    <div class="text-center mb-3">
-                        <button id="calculate-btn" class="btn button mb-3 me-5" type="submit">Calculate</button>
-                    </div>
-                    <div class="text-start mb-3">
-                        <h5>Total Expenses: <span id="total-expenses"></span></h5>
-                        <h5>Balance: <span id="balance-after-expense"></span></h5>
-                    </div>
-
-                    <!-- Expenses Section End -->
-
-                    <!-- Saving Section Start -->
-                    <div class="row mb-3">
-                        <div class="col-lg-2">
-                            <p class="p-2">Save:</p>
-                        </div>
-                        <div class="col-lg-10 text-start">
-                            <input class="w-50" id="save" type="number" value=""><span>%</span>
-                            <button id="save-btn" class="btn button ms-1" type="submit">Save</button>
-                        </div>
-                    </div>
-                    <div class="text-start">
-                        <!-- Another Error -->
-                        <p id="saving-error" class="saving-error">Sorry You have not Enough Money For Saving</p>
-
-                        <h5>Saving Amount: <span id="saving-amount"></span></h5>
-                        <h5>Remaining Amount: <span id="remain-amount"></span></h5>
-                    </div>
-                    <!-- Saving Section End -->
+                    <h5>Income</h5>
+                    <p>Income: <input id="income" type="number" value=""> </p>
+                    <h5>Expenses</h5>
+                    <p>Food: <input id="food" type="number" value=""> </p>
+                    <p>Rent: <input id="rent" type="number" value=""> </p>
+                    <p>Clothes: <input id="cloth" type="number" value=""> </p>
+                    <!-- Some Errors -->
+                    <p id="negetive" class="negetive">Sorry You can't give a negetive value</p>
+                    <p id="blank-error" class="blank-error">Please fill all the input value</p>
+                    <p id="extra-expense" class="extra-expense">Sorry You Can't Spend More than Your Income</p>
+                    <button id="calculate-btn" class="btn button mb-3" type="submit">Calculate</button>
+                    <h5>Total Expenses: <span id="total-expenses"></span></h5>
+                    <h5>Balance: <span id="balance-after-expense"></span></h5>
+                    <p>Save: <input id="save" type="number" value=""><span>%</span>
+                        <button id="save-btn" class="btn button" type="submit">Save</button>
+                    </p>
+                    <!-- Another Error -->
+                    <p id="saving-error" class="saving-error">Sorry You have not Enough Money To Save </p>
+                    <h5>Saving Amount: <span id="saving-amount"></span></h5>
+                    <h5>Remaining Amount: <span id="remain-amount"></span></h5>
                 </div>
             </div>
         </section>

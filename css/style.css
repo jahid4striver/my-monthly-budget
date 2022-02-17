@@ -23,10 +23,6 @@ input{
     border-radius: 10px;
     
 }
-/* .image img{
-    width: 90%;
-    margin: 10px auto;
-} */
 
 .negetive, .blank-error, .extra-expense, .saving-error{
     color: red;
